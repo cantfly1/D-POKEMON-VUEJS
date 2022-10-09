@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "evolutions",
+  "info": {
+    "name": "evolutions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pokemon": {
+      "model": "pokemons",
+      "via": "evolutions",
+      "collection": "pokemons",
+      "dominant": true
+    },
+    "evolution_id": {
+      "type": "biginteger"
+    },
+    "require_lvl": {
+      "type": "biginteger"
+    },
+    "base_id": {
+      "type": "biginteger"
+    }
+  }
+}

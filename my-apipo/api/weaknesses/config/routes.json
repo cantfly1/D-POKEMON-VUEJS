@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/weaknesses",
+      "handler": "weaknesses.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/weaknesses/count",
+      "handler": "weaknesses.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/weaknesses/:id",
+      "handler": "weaknesses.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/weaknesses",
+      "handler": "weaknesses.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/weaknesses/:id",
+      "handler": "weaknesses.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/weaknesses/:id",
+      "handler": "weaknesses.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

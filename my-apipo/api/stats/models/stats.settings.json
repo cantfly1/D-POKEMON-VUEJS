@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stats",
+  "info": {
+    "name": " stats",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pv": {
+      "type": "biginteger"
+    },
+    "attaque": {
+      "type": "biginteger"
+    },
+    "defense": {
+      "type": "biginteger"
+    },
+    "attaque_speciale": {
+      "type": "biginteger"
+    },
+    "defense_speciale": {
+      "type": "biginteger"
+    },
+    "vitesse": {
+      "type": "biginteger"
+    },
+    "pokemon": {
+      "model": "pokemons",
+      "via": "stat"
+    }
+  }
+}

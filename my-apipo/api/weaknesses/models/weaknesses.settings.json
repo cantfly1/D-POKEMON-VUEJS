@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weaknesses",
+  "info": {
+    "name": "weaknesses",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pokemon": {
+      "model": "pokemons",
+      "via": "weaknesses",
+      "collection": "pokemons",
+      "dominant": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    }
+  }
+}

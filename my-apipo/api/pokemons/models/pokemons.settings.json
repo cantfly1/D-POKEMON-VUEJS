@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pokemons",
+  "info": {
+    "name": "pokemons",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "types": {
+      "via": "pokemon",
+      "collection": "types"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "stat": {
+      "via": "pokemon",
+      "model": "stats"
+    },
+    "weaknesses": {
+      "via": "pokemon",
+      "collection": "weaknesses"
+    },
+    "evolutions": {
+      "via": "pokemon",
+      "collection": "evolutions"
+    }
+  }
+}
